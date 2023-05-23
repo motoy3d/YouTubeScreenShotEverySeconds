@@ -57,6 +57,7 @@ const getScreenshot = () => {
   const a = document.createElement('a')
   const canvas = document.createElement('canvas')
   const video = document.querySelector('.video-stream')
+  video.pause()
   const title = (() => {
     const e = document.querySelector('#container > h1')
     if (e !== null) return e.innerText
