@@ -8,13 +8,13 @@ window.onload = () => {
   // 読み込みが完了してないときがあるので2秒後に実行
   let timer = setInterval(() => {
     const path = location.pathname
-    const trg = document.getElementById('player-theater-container')
+    const trg = document.getElementById('player')
     const ui = document.getElementById('screenshot-ui')
     if (path === '/watch' && trg != null && ui == null) {
       clearInterval(timer)
       setCurrentTimeHtml()
     }
-  }, 2000)
+  }, 3000)
 }
 
 const setCurrentTimeHtml = () => {
