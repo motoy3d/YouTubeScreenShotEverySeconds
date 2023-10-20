@@ -1,0 +1,20 @@
+{
+  "name": "YouTubeScreenShotEvery0.5Seconds",
+  "description": "YouTube動画のスクリーンショットを0.5秒ごとに連続で撮ってダウンロードします。",
+  "author": "motoy3d",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/script.js"],
+      "css": ["src/styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
